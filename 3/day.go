@@ -81,13 +81,9 @@ func part2() {
 			splitAtFirstDo := strings.SplitN(betweenDont, "do()", 2)
 			if indexDont == 0 {
 				res += addFromMuls(splitAtFirstDo[0], re)
-				// fmt.Println("Between do : ", betweenDo)
-				// fmt.Println("Passed by because :", indexDont, indexDo, i)
 			}
 			if len(splitAtFirstDo) > 1 {
 				res += addFromMuls(splitAtFirstDo[1], re)
-				// fmt.Println("Passed by because :", indexDont)
-				// fmt.Println("Between dont : ", betweenDont)
 			}
 		}
 		i++
