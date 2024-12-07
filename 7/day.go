@@ -20,15 +20,6 @@ var (
 
 //Functions for both
 
-func contains(slice []int, value int) bool {
-	for _, item := range slice {
-		if item == value {
-			return true
-		}
-	}
-	return false
-}
-
 func readInput() [][]int {
 	//Let's define the map as a 3d matrix, [x][y][0] is the map as the first part ask it, [x][y][1:] are for the direction took on those paths
 	f, err := os.Open("input.txt")
@@ -60,8 +51,6 @@ func readInput() [][]int {
 	defer f.Close()
 	return allEquation
 }
-
-// /Functions for part 1
 
 func operand(value1 int, value2 int, operand int) int {
 	switch operand {
@@ -159,8 +148,6 @@ func countCombination(allOperation [][]int) int {
 	}
 	return res
 }
-
-// /Functions for part 2
 
 //MAIN
 
