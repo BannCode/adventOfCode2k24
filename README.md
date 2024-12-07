@@ -1,1 +1,1 @@
-Advent of code 2024 en GO
+Advent of code 2024 using GO
